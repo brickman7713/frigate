@@ -237,7 +237,7 @@ class CameraWatchdog(threading.Thread):
                 }
             )
 
-        time.sleep(10)
+        time.sleep(1)
         while not self.stop_event.wait(10):
             now = datetime.datetime.now().timestamp()
 
